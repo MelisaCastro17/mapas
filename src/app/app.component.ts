@@ -6,22 +6,16 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'My angular app';
-  var1 = 10;
-  var2 = 20;
-  desabilitado = true;
+    nombre:string=' ';
+    paises:any = [
+    {activo: true, nombre: 'Colombia'},
+    {activo: false, nombre: 'Brasil'},
+    {activo: true, nombre: 'Argentina'},
+    {activo: false, nombre: 'Polonia'},
+    {activo: true, nombre: 'Alemania'},
+    {activo: true, nombre: 'Francia'}
+  ]
+  lat:number = 51.678418;
+  lng:number = 7.809007;
 
-
-  constructor()
-  {
-    setTimeout(() =>
-    {
-        this.desabilitado = false;
-    }, 3000);
-  }
-
-  ejecutar()
-  {
-    alert("Ejecutando...");
-  }
 }
